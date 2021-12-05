@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/font/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/main.js">
+</head>
+<body>
+    
+    <div class="grid">
+        <!-- Header  -->
+        <div class="header">
+            <div class="header__heading">
+                <div class="header__logo">
+                    <a href="http://localhost:5500/#Home" class="header__logo-link">
+                        <img src="/assets/img/f8_icon.png" alt="" class="header__logo-img">
+                    </a>
+                    <h4 class="header__logo-slogan">Học lập trình để đi làm</h4>
+                    <a href="http://localhost:5500/#Home" class="header__logo-back"><i class="header__logo-back-icon fas fa-chevron-left"></i> QUAY LẠI</a> 
+                </div>
+                <div class="header__search">
+                    <i class="header__search-icon fas fa-search"></i>
+                    <input type="text" placeholder="Tìm kiếm khóa học, bài viết, video..." class="header__search-input">
+                    <div class="header__search-comment">
+                        <p class="header__search-comment-content">
+                            <i class="header__search-comment-icon fas fa-search"></i>
+                            Tìm '
+                            <span class="header__search-comment-text"></span> '
+                        </p>
+                    </div>
+                </div>
+                <div class="header__active">
+                    <div class="header__active-notice">
+                        <i class="header__active-icon fas fa-bell"></i>
+
+                        <!-- Notice table  -->
+                        <div class="header__active-notice-table">
+                            <div class="header__active-notice-heading">
+                                <h3 class="header__active-notice-heading-header">Thông báo</h3>
+                                <p class="header__active-notice-heading-mark">Đánh dấu tất cả đã đọc</p>
+                            </div>
+                            <div class="header__active-notice-content">
+                                <img src="/assets/img/f8_avatar.png" alt="" class="header__active-notice-content-img">
+                                <div class="header__active-notice-content-descript">
+                                    <p class="header__active-notice-content-text">Chào mừng cuong nguyen đã gia nhập F8. Hãy luôn đam mê, kiên trì và theo đuổi mục tiêu tới cùng bạn nhé ❤️</p>
+                                    <p class="header__active-notice-content-month">4 tháng trước</p>
+                                </div>
+                                <div class="header__active-notice-content-dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__active-user">
+                        <img src="/assets/img/anhdaidien.jpg" alt="" class="header__active-img">
+
+                        <!-- User- Tabel  -->
+                        <div class="header__active-user-table">
+                            <div class="header__active-user-heading border-bottom ">
+                                <img src="/assets/img/anhdaidien.jpg" alt="" class="header__active-user-heading-img">
+                                <div class="header__active-user-heading-inform">
+                                    <p class="header__active-user-heading-name">Cuong Nguyen</p>
+                                    <p class="header__active-user-heading-gmail">@cuong-nguyen-66</p>
+                                </div>
+                            </div>
+                            <ul class="header__active-user-content border-bottom ">
+                                <li class="header__active-user-content-item">
+                                    <a href="" class="header__active-user-content-link">Viết blog</a>
+                                </li>
+                                <li class="header__active-user-content-item">
+                                    <a href="" class="header__active-user-content-link">Bài viết của tôi</a>
+                                </li>
+                            </ul>
+                            <ul class="header__active-user-content border-bottom">
+                                <li class="header__active-user-content-item">
+                                    <a href="" class="header__active-user-content-link">Nội dung đã lưu</a>
+                                </li>
+                            </ul>
+                            <ul class="header__active-user-content">
+                                <li class="header__active-user-content-item">
+                                    <a href="" class="header__active-user-content-link">Cài đặt</a>
+                                </li>
+                                <li class="header__active-user-content-item">
+                                    <a href="" class="header__active-user-content-link">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Container  -->
+        <div class="container">
+            <div class="grid">
+                <div class="container__inculde">
+                    <!-- Navigation  -->
+                    <div class="container__navbar">
+                        <div class="container__navigation">
+                            <div class="navigation__button">
+                                <div class="navigation__button-btn">
+                                    <i class="fas fa-plus navigation__button-plus navigation__button-plus--hover"></i>
+                                </div>
+                                <div class="navigation__button-open">
+                                    <ul class="navigation__button-open-list">
+                                        <li class="navigation__button-item">
+                                            <a href="" class="navigation__button-link">
+                                                <i class="navigation__button-open-icon fas fa-pen"></i> Viết blog
+                                            </a>
+                                        </li>
+                                        <li class="navigation__button-item">
+                                            <a href="" class="navigation__button-link">
+                                                <i class="navigation__button-open-icon fas fa-question"></i>    Đặt câu hỏi
+                                            </a>
+                                        </li>
+                                        <li class="navigation__button-item">
+                                            <a href="" class="navigation__button-link">
+                                                <i class="navigation__button-open-icon fas fa-code"></i>Chia sẻ code
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="navigation__list">
+                                <li class="navigation__list-item">
+                                    <a href="#Home" class="navigation__list-link navigation--active">
+                                        <div class="navigation__list-link-icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <p class="navigation__list-link-text">Home</p>
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#Leaning" class="navigation__list-link">
+                                        <div class="navigation__list-link-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <p class="navigation__list-link-text">Học</p>
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#Blog" class="navigation__list-link">
+                                        <div class="navigation__list-link-icon">
+                                            <i class="fab fa-blogger"></i>
+                                        </div>
+                                        <p class="navigation__list-link-text">Blog</p>
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#Questioning" class="navigation__list-link">
+                                        <div class="navigation__list-link-icon">
+                                            <i class="fas fa-question"></i>
+                                        </div>
+                                        <p class="navigation__list-link-text">Hỏi</p>
+                                    </a>
+                                </li>
+                                <li class="navigation__list-item">
+                                    <a href="#Code" class="navigation__list-link">
+                                        <div class="navigation__list-link-icon">
+                                            <i class="fas fa-code"></i>
+                                        </div>
+                                        <p class="navigation__list-link-text">Code</p>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!-- Content  -->
+                    <!-- Home  -->
+                    <div class="content__item">
+                        <div class="container__content">
+                            <!-- Slide  -->
+                            <div class="container__content-slide">
+                                <div class="container__content-slide-content">
+                                    <div class="container__content-slide-list">
+        
+                                        <div class="container__content-slide-item container__content-slide-item--result">
+                                            <div class="container__content-slide-item-content">
+                                                <h2 class="container__content-slide-item-heading">Thành quả của học viên</h2>
+                                                <p class="container__content-slide-item-description">Để đạt được kết quả tốt trong mọi việc ta cần xác định mục tiêu rõ ràng cho việc đó. Học lập trình cũng không ngoại lệ</p>
+                                                <div class="container__content-slide-item-btn">
+                                                    <a href="" class="container__content-slide-item-btn--link container__content-slide-item-btnResult--hover">Xem thành quả</a>
+                                                </div>
+                                            </div>
+                                            <div class="container__content-slide-item-imgs">
+                                                <a href="" class="container__content-slide-item--link">
+                                                    <img src="/assets/img/Banner_01_2.png" alt="" class="container__content-slide-item-img">
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="container__content-slide-item container__content-slide-item--YT">
+                                            <div class="container__content-slide-item-content">
+                                                <h2 class="container__content-slide-item-heading">F8 trên Youtube</h2>
+                                                <p class="container__content-slide-item-description">F8 được nhắc tới mọi nơi, ở đâu có cơ hội việc làm cho nghề IT có những con người yêu thích lập trình F8 tại đó</p>
+                                                <div class="container__content-slide-item-btn">
+                                                    <a href="" class="container__content-slide-item-btn--link container__content-slide-item-btnYT--hover">Truy cập kênh</a>
+                                                </div>
+                                            </div>
+                                            <div class="container__content-slide-item-imgs">
+                                                <a href="" class="container__content-slide-item--link">
+                                                    <img src="/assets/img/Banner_03_youtube.png" alt="" class="container__content-slide-item-img">
+                                                </a>
+                                            </div>
+                                        </div>
+        
+                                        <div class="container__content-slide-item container__content-slide-item--FB">
+                                            <div class="container__content-slide-item-content">
+                                                <h2 class="container__content-slide-item-heading">F8 trên Facebook</h2>
+                                                <p class="container__content-slide-item-description">F8 được nhắc tới mọi nơi, ở đâu có cơ hội việc làm cho nghề IT có những con người yêu thích lập trình F8 tại đó</p>
+                                                <div class="container__content-slide-item-btn">
+                                                    <a href="" class="container__content-slide-item-btn--link container__content-slide-item-btnFB--hover">Truy cập nhóm</a>
+                                                </div>
+                                            </div>
+                                            <div class="container__content-slide-item-imgs">
+                                                <a href="" class="container__content-slide-item--link">
+                                                    <img src="/assets/img/Banner_04_2.png" alt="" class="container__content-slide-item-img">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container__content-slide-btn container__content-slide-btn--left">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                                <div class="container__content-slide-btn container__content-slide-btn--right">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+    
+                                <div class="container__content-slide-dots">
+                                    <div class="container__content-slide-dot"></div>
+                                    <div class="container__content-slide-dot"></div>
+                                    <div class="container__content-slide-dot"></div>
+                                </div>
+                            </div>
+                            <!-- Courses  -->
+                            <div class="container__content-courses">
+    
+                                <p class="container__content-course-totalUser">
+                                    <span class="container__content-course-totalUser-number">115.373+</span> người khác đang học
+                                </p>
+                                <!-- Khoá đang học  -->
+                                <nav class="container__content-course">
+                                    
+                                    <div class="container__content-course-header">
+                                        <h2 class="container__content-course-heading">Khóa đang học</h2>
+                                        <a class="container__content-course-open">
+                                            Xem tất cả 
+                                            <i class="container__content-course-open-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="container__content-course-list">
+                                        <div class="container__content-course-item course-learning course-learning-first">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/html,css-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">HTML, CSS từ Zero đến Hero</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript cơ bản</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/responsive.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Responsive</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/htm,css.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">HTMl, CSS Tips & Tricks</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript Nâng cao</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascrip first</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript second</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-learning">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/kienthucnentang.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Kiến thức nhập môn</h3>
+                                                    <p class="container__content-course-item-user"></p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="container__content-slide-btn container__content-slide-btn--left course-learning-btn-prev">
+                                        <i class="fas fa-angle-left"></i>
+                                    </div>
+                                    <div class="container__content-slide-btn container__content-slide-btn--right course-learning-btn-next">
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                    
+                                    <div class="container__content-course-scrollbar"></div>
+    
+                                </nav>
+    
+                                <!-- Khóa chưa học  -->
+                                <nav class="container__content-course">
+                                    
+                                    <div class="container__content-course-header">
+                                        <h2 class="container__content-course-heading">Khóa chưa học</h2>
+                                        <a class="container__content-course-open">
+                                            Xem tất cả 
+                                            <i class="container__content-course-open-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="container__content-course-list">
+                                        <div class="container__content-course-item course-willLearn-first course-willLearn">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/html,css-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">HTML, CSS từ Zero đến Hero</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <i class="fas fa-users"></i>   12.364
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-willLearn">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript cơ bản</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <i class="fas fa-users"></i>   12.364
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-willLearn">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/responsive.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Responsive</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <i class="fas fa-users"></i>   12.364
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-willLearn">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/htm,css.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">HTMl, CSS Tips & Tricks</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <i class="fas fa-users"></i>   12.364
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item course-willLearn">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript Nâng cao</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <i class="fas fa-users"></i>   12.364
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+    
+                                    <div class="container__content-slide-btn container__content-slide-btn--left btnPrev-course-willLearn">
+                                        <i class="fas fa-angle-left"></i>
+                                    </div>
+                                    <div class="container__content-slide-btn container__content-slide-btn--right btnNext-course-willLearn">
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+                                    
+                                    <div class="container__content-course-scrollbar"></div>
+    
+    
+                                </nav>
+    
+                                <!-- Bài viết nổi bâtj  -->
+                                <nav class="container__content-course">
+                                    
+                                    <div class="container__content-course-header">
+                                        <h2 class="container__content-course-heading">Bài viết nổi bật</h2>
+                                        <a class="container__content-course-open">
+                                            Xem tất cả 
+                                            <i class="container__content-course-open-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="container__content-course-list">
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/history.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">TyperScrip là gì, vì sao nên dùng nó</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/batdongbo.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Xử ly bất đồng bộ trong Javascrip(phần 2)</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/reacRouter.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Routing trong reactJS( phần 1)</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/oop.jpg" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Lập trình hướng đối tượng</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/As.jpg" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Xử lý bất đồng bộ( phần 1)</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/review.jpg" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">[Vlog] Review tất cả đồ dùng F8</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/batdongbo.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Xử lý bất đồng bộ( phần 1)</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/coban.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">[Cơ bản] Life cycle của Component trong React</h3>
+                                                    <p class="container__content-course-item-user">
+                                                        <img src="/assets/img/anhdaidien.jpg" alt="" class="container__content-course-item-user-img"> <span class="container__content-course-item-user-name">Van Cuong</span> . 8 ngày trước
+                                                    </p>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+    
+                                    <div class="container__content-slide-btn container__content-slide-btn--left">
+                                        <i class="fas fa-angle-left"></i>
+                                    </div>
+                                    <div class="container__content-slide-btn container__content-slide-btn--right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+    
+                                    <div class="container__content-course-scrollbar"></div>
+    
+                                </nav>
+    
+                                <!-- Video nổi bật  -->
+                                <nav class="container__content-course">
+                                    
+                                    <div class="container__content-course-header">
+                                        <h2 class="container__content-course-heading">Video nổi bật</h2>
+                                        <a class="container__content-course-open">
+                                            Xem tất cả 
+                                            <i class="container__content-course-open-icon fas fa-angle-right"></i>
+                                        </a>
+                                    </div>
+    
+                                    <div class="container__content-course-list">
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/html,css-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">HTML, CSS từ Zero đến Hero</h3>
+                                                    <div class="container__content-course-item-user-video">
+                                                        <p class="container__content-course-item-user-view">
+                                                            <i class="container__content-course-item-user-view-icon fas fa-eye"></i>  123.456
+                                                        </p>
+                                                        <p class="container__content-course-item-user-like">
+                                                            <i class="container__content-course-item-user-like-icon fas fa-thumbs-up"></i>  4.644
+                                                        </p>
+                                                        <p class="container__content-course-item-user-comment">
+                                                            <i class="container__content-course-item-user-comment-icon fas fa-comment"></i>  200
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript-basic.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript cơ bản</h3>
+                                                    <div class="container__content-course-item-user-video">
+                                                        <p class="container__content-course-item-user-view">
+                                                            <i class="container__content-course-item-user-view-icon fas fa-eye"></i> 123.456
+                                                        </p>
+                                                        <p class="container__content-course-item-user-like">
+                                                            <i class="container__content-course-item-user-like-icon fas fa-thumbs-up"></i> 4.644
+                                                        </p>
+                                                        <p class="container__content-course-item-user-comment">
+                                                            <i class="container__content-course-item-user-comment-icon fas fa-comment"></i>  200 
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/responsive.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Responsive</h3>
+                                                    <div class="container__content-course-item-user-video">
+                                                        <p class="container__content-course-item-user-view">
+                                                            <i class="container__content-course-item-user-view-icon fas fa-eye"></i> 123.456
+                                                        </p>
+                                                        <p class="container__content-course-item-user-like">
+                                                            <i class="container__content-course-item-user-like-icon fas fa-thumbs-up"></i> 4.644
+                                                        </p>
+                                                        <p class="container__content-course-item-user-comment">
+                                                            <i class="container__content-course-item-user-comment-icon fas fa-comment"></i>  200
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/htm,css.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">HTMl, CSS Tips & Tricks</h3>
+                                                    <div class="container__content-course-item-user-video">
+                                                        <p class="container__content-course-item-user-view">
+                                                            <i class="container__content-course-item-user-view-icon fas fa-eye"></i> 123.456
+                                                        </p>
+                                                        <p class="container__content-course-item-user-like">
+                                                            <i class="container__content-course-item-user-like-icon fas fa-thumbs-up"></i> 4.644
+                                                        </p>
+                                                        <p class="container__content-course-item-user-comment">
+                                                            <i class="container__content-course-item-user-comment-icon fas fa-comment"></i>  200
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                        <div class="container__content-course-item">
+                                            <a href="" class="container__content-course-link">
+                                                <div class="container__content-course-item-avatar">
+                                                    <img src="/assets/img/javascript.png" alt="" class="container__content-course-item-img">
+                                                </div>
+                                                <div class="container__content-course-item-description">
+                                                    <h3 class="container__content-course-item-name">Javascript Nâng cao</h3>
+                                                    <div class="container__content-course-item-user-video">
+                                                        <p class="container__content-course-item-user-view">
+                                                            <i class="container__content-course-item-user-view-icon fas fa-eye"></i> 123.456
+                                                        </p>
+                                                        <p class="container__content-course-item-user-like">
+                                                            <i class="container__content-course-item-user-like-icon fas fa-thumbs-up"></i> 4.644
+                                                        </p>
+                                                        <p class="container__content-course-item-user-comment">
+                                                            <i class="container__content-course-item-user-comment-icon fas fa-comment"></i>  200
+                                                        </p>
+                                                    </div>
+                                                </div>
+    
+                                            </a>
+                                        </div>
+    
+                                    </div>
+    
+                                    <!-- Button next and prev  -->
+                                    <div class="container__content-slide-btn container__content-slide-btn--left">
+                                        <i class="fas fa-angle-left"></i>
+                                    </div>
+                                    <div class="container__content-slide-btn container__content-slide-btn--right">
+                                        <i class="fas fa-angle-right"></i>
+                                    </div>
+    
+                                    <!-- Scroll bar  -->
+                                    <div class="container__content-course-scrollbar"></div>
+    
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Learning  -->
+                    <div class="content__item" style="width: 100%;">
+                        <div class="container__learning">
+                            <div class="learning__courses-learning">
+                                <h2 class="learning__courses-heading">Khóa đang học</h2>
+                                <div class="row learning__item learning__courses-courses"></div>
+                            </div>
+                            <div class="learning__courses-willLearn">
+                                <h2 class="learning__courses-heading">Khóa chưa học</h2>
+                                <div class="row willLearning__item learning__courses-courses"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Questioning  -->
+                    <div class="content__item"></div>
+                    <!-- Blog  -->
+                    <div class="content__item"></div>
+                    <!-- Coding -->
+                    <div class="content__item"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer  -->
+        <div class="footer">
+            <div class="footer__left">
+                <img src="/assets/img/f8_icon-footer.png" alt="" class="footer__left-img">  
+                <a href="" class="footer__left-introduce">Giới thiệu</a> 
+                <a href="" class="footer__left-change">Cơ hội việc làm</a>
+            </div>
+            <div class="footer__right">
+                <a href="" class="footer__right-link">
+                    <i class="footer__right-FB fab fa-facebook-square"></i>
+                </a>
+                <a href="" class="footer__right-link">
+                    <i class="footer__right-YT fab fa-youtube-square"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="/main.js"></script>
+</body>
+</html>
